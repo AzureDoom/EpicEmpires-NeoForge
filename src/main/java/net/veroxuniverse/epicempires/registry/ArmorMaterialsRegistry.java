@@ -15,13 +15,53 @@ import java.util.function.Supplier;
 
 public enum ArmorMaterialsRegistry implements ArmorMaterial {
 
-    IRON_TEST("iron_test", 15,Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+    SPARTAN("spartan", 35,Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+        armor.put(ArmorItem.Type.BOOTS, 3);
+        armor.put(ArmorItem.Type.LEGGINGS, 6);
+        armor.put(ArmorItem.Type.CHESTPLATE, 8);
+        armor.put(ArmorItem.Type.HELMET, 3);
+    }), 12, SoundEvents.ARMOR_EQUIP_GOLD, 2.0F, 0.0F,
+            () -> Ingredient.of(ItemsRegistry.ANCIENT_GOLD_INGOT.get())),
+
+    ROMAN("roman", 35,Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+        armor.put(ArmorItem.Type.BOOTS, 3);
+        armor.put(ArmorItem.Type.LEGGINGS, 6);
+        armor.put(ArmorItem.Type.CHESTPLATE, 8);
+        armor.put(ArmorItem.Type.HELMET, 3);
+    }), 12, SoundEvents.ARMOR_EQUIP_GOLD, 2.0F, 0.0F,
+            () -> Ingredient.of(ItemsRegistry.ANCIENT_GOLD_INGOT.get())),
+
+    EGYPTIAN("egyptian", 35,Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
         armor.put(ArmorItem.Type.BOOTS, 1);
         armor.put(ArmorItem.Type.LEGGINGS, 2);
         armor.put(ArmorItem.Type.CHESTPLATE, 3);
         armor.put(ArmorItem.Type.HELMET, 1);
-    }), 12, SoundEvents.ARMOR_EQUIP_LEATHER, 0.0F, 0.0F,
-            () -> Ingredient.of(Items.IRON_INGOT));
+    }), 12, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F,
+            () -> Ingredient.of(Items.LEATHER)),
+
+    ELITE_SPARTAN("elite_spartan", 35,Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+        armor.put(ArmorItem.Type.BOOTS, 3);
+        armor.put(ArmorItem.Type.LEGGINGS, 6);
+        armor.put(ArmorItem.Type.CHESTPLATE, 8);
+        armor.put(ArmorItem.Type.HELMET, 3);
+    }), 12, SoundEvents.ARMOR_EQUIP_GOLD, 3.0F, 0.1F,
+            () -> Ingredient.of(ItemsRegistry.ANCIENT_GOLD_INGOT.get())),
+
+    ELITE_ROMAN("elite_roman", 35,Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+        armor.put(ArmorItem.Type.BOOTS, 3);
+        armor.put(ArmorItem.Type.LEGGINGS, 6);
+        armor.put(ArmorItem.Type.CHESTPLATE, 8);
+        armor.put(ArmorItem.Type.HELMET, 3);
+    }), 12, SoundEvents.ARMOR_EQUIP_GOLD, 3.0F, 0.1F,
+            () -> Ingredient.of(ItemsRegistry.ANCIENT_GOLD_INGOT.get())),
+
+    ELITE_EGYPTIAN("elite_egyptian", 35,Util.make(new EnumMap<>(ArmorItem.Type.class), (armor) -> {
+        armor.put(ArmorItem.Type.BOOTS, 3);
+        armor.put(ArmorItem.Type.LEGGINGS, 6);
+        armor.put(ArmorItem.Type.CHESTPLATE, 8);
+        armor.put(ArmorItem.Type.HELMET, 3);
+    }), 12, SoundEvents.ARMOR_EQUIP_GOLD, 2.0F, 0.0F,
+            () -> Ingredient.of(ItemsRegistry.ANCIENT_GOLD_INGOT.get()));
 
     private static final EnumMap<ArmorItem.Type, Integer> HEALTH_FUNCTION_FOR_TYPE = Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266653_) -> {
         p_266653_.put(ArmorItem.Type.BOOTS, 13);

@@ -11,11 +11,11 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 
-public class ModdedArmorItem extends net.minecraft.world.item.ArmorItem implements GeoItem {
+public class ModArmorItem extends net.minecraft.world.item.ArmorItem implements GeoItem {
 
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
-    public ModdedArmorItem(ArmorMaterial material, Type type, Properties properties) {
+    public ModArmorItem(ArmorMaterial material, Type type, Properties properties) {
         super(material, type, properties);
     }
     @Override
@@ -23,7 +23,7 @@ public class ModdedArmorItem extends net.minecraft.world.item.ArmorItem implemen
         controllerRegistrar.add(new AnimationController<>(this, "controller", 0, this::predicate));
     }
 
-    private PlayState predicate(AnimationState<ModdedArmorItem> animationState) {
+    private PlayState predicate(AnimationState<ModArmorItem> animationState) {
         return PlayState.STOP;
     }
 

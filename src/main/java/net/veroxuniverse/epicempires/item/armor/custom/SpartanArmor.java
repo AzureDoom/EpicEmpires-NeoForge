@@ -6,13 +6,13 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
-import net.veroxuniverse.epicempires.item.armor.ModdedArmorItem;
+import net.veroxuniverse.epicempires.item.armor.ModArmorItem;
 import net.veroxuniverse.epicempires.item.armor.client.renderer.SpartanRenderer;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Consumer;
 
-public class SpartanArmor extends ModdedArmorItem {
+public class SpartanArmor extends ModArmorItem {
     public SpartanArmor(ArmorMaterial material, Type type, Properties properties) {
         super(material, type, properties);
     }

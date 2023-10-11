@@ -10,8 +10,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.veroxuniverse.epicempires.item.ModItemProperties;
 import net.veroxuniverse.epicempires.registry.CreativeTabRegistry;
 import net.veroxuniverse.epicempires.registry.ItemsRegistry;
+import net.veroxuniverse.epicempires.loot.ModLootModifiers;
 import org.slf4j.Logger;
 
 @Mod(EpicEmpires.MOD_ID)
@@ -27,6 +29,7 @@ public class EpicEmpires
 
         ItemsRegistry.register(modEventBus);
         CreativeTabRegistry.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -52,6 +55,11 @@ public class EpicEmpires
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             LOGGER.info("HELLO FROM CLIENT SETUP");
+
+            event.enqueueWork(() -> {
+                ModItemProperties.addCustomItemProperties();
+            });
+
         }
     }
 }

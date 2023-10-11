@@ -19,7 +19,7 @@ public class CreativeTabRegistry {
             EpicEmpires.MOD_ID,
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup." + EpicEmpires.MOD_ID))
-                    .icon(() -> new ItemStack(Items.IRON_INGOT))
+                    .icon(() -> new ItemStack(ItemsRegistry.ROMAN_SHIELD.get()))
                     .displayItems((displayParameters, output) -> {
                         for (RegistryObject<Item> item : ItemsRegistry.ITEMS.getEntries())
                             output.accept(item.get());
