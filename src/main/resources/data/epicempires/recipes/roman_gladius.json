@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "tag": "forge:rods/wooden"
+    },
+    "G": {
+      "item": "epicempires:ancient_iron_ingot"
+    }
+  },
+  "pattern": [
+    "  G",
+    " G ",
+    "X  "
+  ],
+  "result": {
+    "item": "epicempires:roman_gladius"
+  }
+}

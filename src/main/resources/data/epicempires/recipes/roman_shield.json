@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "tag": "minecraft:planks"
+    },
+    "G": {
+      "item": "epicempires:ancient_gold_ingot"
+    },
+    "W": {
+      "item": "minecraft:red_wool"
+    }
+  },
+  "pattern": [
+    "XWX",
+    "WGW",
+    "XWX"
+  ],
+  "result": {
+    "item": "epicempires:roman_shield"
+  }
+}

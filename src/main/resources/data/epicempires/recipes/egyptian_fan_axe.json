@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "tag": "forge:rods/wooden"
+    },
+    "G": {
+      "item": "epicempires:ancient_gold_ingot"
+    },
+    "W": {
+      "tag": "forge:gems/lapis"
+    }
+  },
+  "pattern": [
+    " WG",
+    " XW",
+    "G  "
+  ],
+  "result": {
+    "item": "epicempires:egyptian_fan_axe"
+  }
+}

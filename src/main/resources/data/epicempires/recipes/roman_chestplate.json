@@ -2,18 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "X": {
-      "item": "epicempires:ancient_gold_ingot"
+      "item": "epicempires:ancient_iron_ingot"
     },
     "G": {
       "item": "minecraft:red_wool"
     }
   },
   "pattern": [
-    "XXX",
+    "X X",
     "XGX",
-    "X X"
+    "XXX"
   ],
   "result": {
-    "item": "epicempires:spartan_leggings"
+    "item": "epicempires:roman_chestplate"
   }
 }

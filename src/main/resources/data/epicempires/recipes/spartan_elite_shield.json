@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "minecraft:red_wool"
+    },
+    "G": {
+      "item": "epicempires:ancient_gold_ingot"
+    }
+  },
+  "pattern": [
+    "GXG",
+    "GGG",
+    "GXG"
+  ],
+  "result": {
+    "item": "epicempires:spartan_elite_shield"
+  }
+}

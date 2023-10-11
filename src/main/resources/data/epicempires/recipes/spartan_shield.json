@@ -2,18 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "X": {
-      "item": "epicempires:ancient_gold_ingot"
+      "tag": "minecraft:planks"
     },
     "G": {
-      "item": "minecraft:red_wool"
+      "item": "epicempires:ancient_gold_ingot"
     }
   },
   "pattern": [
     "XXX",
     "XGX",
-    "X X"
+    "XXX"
   ],
   "result": {
-    "item": "epicempires:spartan_leggings"
+    "item": "epicempires:spartan_shield"
   }
 }

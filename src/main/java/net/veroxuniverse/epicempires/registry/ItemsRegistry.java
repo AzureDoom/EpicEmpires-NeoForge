@@ -43,9 +43,9 @@ public class ItemsRegistry {
     public static final RegistryObject<Item> SPARTAN_SPEAR = ITEMS.register("spartan_spear",
             () -> new SwordItem(ItemMaterialsRegistry.SPARTAN, 2, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> SPARTAN_SHIELD = ITEMS.register("spartan_shield",
-            () -> new ShieldItem(new Item.Properties().durability(500)));
+            () -> new ShieldItem(new Item.Properties().durability(650)));
     public static final RegistryObject<Item> SPARTAN_ELITE_SHIELD = ITEMS.register("spartan_elite_shield",
-            () -> new ShieldItem(new Item.Properties().durability(500)));
+            () -> new ShieldItem(new Item.Properties().durability(800)));
 
     public static final RegistryObject<Item> ROMAN_HELMET = ITEMS.register("roman_helmet",
             () -> new RomanArmor(ArmorMaterialsRegistry.ROMAN, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -70,9 +70,9 @@ public class ItemsRegistry {
     public static final RegistryObject<Item> ROMAN_SPEAR = ITEMS.register("roman_spear",
             () -> new SwordItem(ItemMaterialsRegistry.ROMAN, 2, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> ROMAN_SHIELD = ITEMS.register("roman_shield",
-            () -> new ShieldItem(new Item.Properties().durability(500)));
+            () -> new ShieldItem(new Item.Properties().durability(650)));
     public static final RegistryObject<Item> ROMAN_ELITE_SHIELD = ITEMS.register("roman_elite_shield",
-            () -> new ShieldItem(new Item.Properties().durability(500)));
+            () -> new ShieldItem(new Item.Properties().durability(800)));
 
     public static final RegistryObject<Item> EGYPTIAN_HELMET = ITEMS.register("egyptian_helmet",
             () -> new EgyptianArmor(ArmorMaterialsRegistry.EGYPTIAN, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -98,9 +98,9 @@ public class ItemsRegistry {
     public static final RegistryObject<Item> EGYPTIAN_FAN_AXE = ITEMS.register("egyptian_fan_axe",
             () -> new SwordItem(ItemMaterialsRegistry.EGYPTIAN, 4, -3.0f, new Item.Properties()));
     public static final RegistryObject<Item> EGYPTIAN_SHIELD = ITEMS.register("egyptian_shield",
-            () -> new ShieldItem(new Item.Properties().durability(500)));
+            () -> new ShieldItem(new Item.Properties().durability(650)));
     public static final RegistryObject<Item> EGYPTIAN_ELITE_SHIELD = ITEMS.register("egyptian_elite_shield",
-            () -> new ShieldItem(new Item.Properties().durability(500)));
+            () -> new ShieldItem(new Item.Properties().durability(800)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

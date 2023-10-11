@@ -2,21 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "X": {
-      "item": "epicsamurai:amethyst_ingot"
+      "item": "epicempires:ancient_gold_ingot"
     },
     "G": {
-      "tag": "forge:ingots/netherite"
-    },
-    "A": {
-      "tag": "forge:gems/amethyst"
+      "item": "minecraft:red_wool"
     }
   },
   "pattern": [
     " G ",
-    "XAX",
+    "XXX",
     "X X"
   ],
   "result": {
-    "item": "epicsamurai:amethyst_samurai_helmet"
+    "item": "epicempires:spartan_helmet"
   }
 }

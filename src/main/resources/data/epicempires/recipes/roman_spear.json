@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "tag": "minecraft:planks"
+    },
+    "G": {
+      "item": "epicempires:ancient_iron_ingot"
+    },
+    "W": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "pattern": [
+    " XG",
+    " WX",
+    "G  "
+  ],
+  "result": {
+    "item": "epicempires:roman_spear"
+  }
+}

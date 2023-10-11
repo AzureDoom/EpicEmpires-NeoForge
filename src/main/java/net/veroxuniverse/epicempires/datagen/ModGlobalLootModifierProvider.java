@@ -23,7 +23,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
 
     @Override
     protected void start() {
-        
+
         //* ANCIENT GOLD *//
 
         add("ancient_gold_from_jungle_temple", new AddItemModifier(new LootItemCondition[] {
@@ -34,6 +34,11 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
         add("ancient_gold_from_desert_pyramid", new AddItemModifier(new LootItemCondition[] {
                 LootItemRandomChanceCondition.randomChance(0.45f).build(),
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/desert_pyramid")).build() },
+                ItemsRegistry.ANCIENT_GOLD_INGOT.get()));
+
+        add("ancient_gold_from_simple_dungeon", new AddItemModifier(new LootItemCondition[] {
+                LootItemRandomChanceCondition.randomChance(0.45f).build(),
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/simple_dungeon")).build() },
                 ItemsRegistry.ANCIENT_GOLD_INGOT.get()));
 
         add("ancient_gold_from_nether_fortress", new AddItemModifier(new LootItemCondition[] {
@@ -84,6 +89,11 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
         add("ancient_iron_from_desert_pyramid", new AddItemModifier(new LootItemCondition[] {
                 LootItemRandomChanceCondition.randomChance(0.45f).build(),
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/desert_pyramid")).build() },
+                ItemsRegistry.ANCIENT_IRON_INGOT.get()));
+
+        add("ancient_iron_from_simple_dungeon", new AddItemModifier(new LootItemCondition[] {
+                LootItemRandomChanceCondition.randomChance(0.45f).build(),
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/simple_dungeon")).build() },
                 ItemsRegistry.ANCIENT_IRON_INGOT.get()));
 
         add("ancient_iron_from_nether_fortress", new AddItemModifier(new LootItemCondition[] {

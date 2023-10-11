@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "X": {
+    "G": {
       "item": "epicempires:ancient_gold_ingot"
     },
-    "G": {
+    "W": {
       "item": "minecraft:red_wool"
     }
   },
   "pattern": [
-    "XXX",
-    "XGX",
-    "X X"
+    "GWG",
+    "WGW",
+    "GWG"
   ],
   "result": {
-    "item": "epicempires:spartan_leggings"
+    "item": "epicempires:roman_elite_shield"
   }
 }

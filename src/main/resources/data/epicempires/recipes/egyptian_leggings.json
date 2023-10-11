@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "tag": "forge:leather"
+    },
+    "G": {
+      "item": "minecraft:brown_wool"
+    }
+  },
+  "pattern": [
+    "GXG",
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "item": "epicempires:egyptian_leggings"
+  }
+}

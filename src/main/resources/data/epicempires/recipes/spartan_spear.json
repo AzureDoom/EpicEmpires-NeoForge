@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "tag": "forge:rods/wooden"
+    },
+    "G": {
+      "item": "epicempires:ancient_gold_ingot"
+    },
+    "W": {
+      "item": "minecraft:red_wool"
+    }
+  },
+  "pattern": [
+    " WG",
+    " XW",
+    "G  "
+  ],
+  "result": {
+    "item": "epicempires:spartan_spear"
+  }
+}
