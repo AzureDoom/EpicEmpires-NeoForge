@@ -1,5 +1,6 @@
 package net.veroxuniverse.epicempires.item.armor.custom;
 
+import mod.azure.azurelibarmor.animatable.client.RenderProvider;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -17,7 +18,9 @@ public class EgyptianArmor extends ModArmorItem {
         super(material, type, properties);
     }
 
-    @Override
+    /*
+
+   @Override
     public void initializeClient(Consumer<IClientItemExtensions> consumer) {
         consumer.accept(new IClientItemExtensions() {
             private EgyptianRenderer renderer;
@@ -29,6 +32,23 @@ public class EgyptianArmor extends ModArmorItem {
                     this.renderer = new EgyptianRenderer();
 
                 this.renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);
+                return this.renderer;
+            }
+        });
+    }
+
+     */
+
+    @Override
+    public void createRenderer(Consumer<Object> consumer) {
+        consumer.accept(new RenderProvider() {
+            private EgyptianRenderer renderer = null;
+
+            @Override
+            public HumanoidModel<LivingEntity> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, HumanoidModel<LivingEntity> original) {
+                if (renderer == null)
+                    return new EgyptianRenderer();
+                renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);
                 return this.renderer;
             }
         });
