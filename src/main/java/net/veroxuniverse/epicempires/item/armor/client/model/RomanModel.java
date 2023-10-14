@@ -18,6 +18,6 @@ public class RomanModel extends GeoModel<RomanArmor> {
 
     @Override
     public ResourceLocation getAnimationResource(RomanArmor spartanArmor) {
-        return null;
+        return new ResourceLocation(EpicEmpires.MOD_ID, "animations/empty.animation.json");
     }
 }

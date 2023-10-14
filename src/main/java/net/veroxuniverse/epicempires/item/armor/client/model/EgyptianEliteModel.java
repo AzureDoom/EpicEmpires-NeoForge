@@ -18,6 +18,6 @@ public class EgyptianEliteModel extends GeoModel<EgyptianEliteArmor> {
 
     @Override
     public ResourceLocation getAnimationResource(EgyptianEliteArmor spartanArmor) {
-        return null;
+        return new ResourceLocation(EpicEmpires.MOD_ID, "animations/empty.animation.json");
     }
 }

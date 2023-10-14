@@ -43,14 +43,15 @@ public class RomanArmor extends ModArmorItem {
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            private RomanRenderer renderer = null;
+            private RomanRenderer renderer;
 
             @Override
-            public HumanoidModel<LivingEntity> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, HumanoidModel<LivingEntity> original) {
+            public @NotNull HumanoidModel<LivingEntity> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, HumanoidModel<LivingEntity> original) {
                 if (renderer == null)
-                    return new RomanRenderer();
+                    renderer = new RomanRenderer();
+
                 renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);
-                return this.renderer;
+                return renderer;
             }
         });
     }

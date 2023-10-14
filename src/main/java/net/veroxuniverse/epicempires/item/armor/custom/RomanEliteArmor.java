@@ -10,6 +10,7 @@ import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import net.veroxuniverse.epicempires.item.armor.ModArmorItem;
 import net.veroxuniverse.epicempires.item.armor.client.renderer.EgyptianEliteRenderer;
 import net.veroxuniverse.epicempires.item.armor.client.renderer.RomanEliteRenderer;
+import net.veroxuniverse.epicempires.item.armor.client.renderer.RomanRenderer;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Consumer;
@@ -43,14 +44,15 @@ public class RomanEliteArmor extends ModArmorItem {
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            private RomanEliteRenderer renderer = null;
+            private RomanEliteRenderer renderer;
 
             @Override
-            public HumanoidModel<LivingEntity> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, HumanoidModel<LivingEntity> original) {
+            public @NotNull HumanoidModel<LivingEntity> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, HumanoidModel<LivingEntity> original) {
                 if (renderer == null)
-                    return new RomanEliteRenderer();
+                    renderer = new RomanEliteRenderer();
+
                 renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);
-                return this.renderer;
+                return renderer;
             }
         });
     }

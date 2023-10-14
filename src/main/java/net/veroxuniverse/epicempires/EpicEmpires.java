@@ -1,6 +1,7 @@
 package net.veroxuniverse.epicempires;
 
 import com.mojang.logging.LogUtils;
+import mod.azure.azurelibarmor.AzureArmorLib;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -26,6 +27,8 @@ public class EpicEmpires
     public EpicEmpires()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        AzureArmorLib.initialize();
 
         ItemsRegistry.register(modEventBus);
         CreativeTabRegistry.register(modEventBus);
