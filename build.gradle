@@ -90,6 +90,10 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:cloth-config-348521:${cloth_version}-forge")
     runtimeOnly fg.deobf("curse.maven:playeranimator-658587:${playeranimator_version}-forge")
 
+    runtimeOnly fg.deobf("curse.maven:shield-expansion-583318:4681306")
+
+    runtimeOnly fg.deobf("curse.maven:epic-fight-mod-405076:${epicfight_version}")
+
     // compile against the JEI API but do not include it at runtime
     compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"))
     compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
