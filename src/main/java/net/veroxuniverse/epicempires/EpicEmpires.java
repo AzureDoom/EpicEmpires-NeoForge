@@ -27,7 +27,7 @@ public class EpicEmpires
     public EpicEmpires()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
+        /** TODO: Remove this call as unneeded **/
         AzureLib.initialize();
 
         ItemsRegistry.register(modEventBus);
